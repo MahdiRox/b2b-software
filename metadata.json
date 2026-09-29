@@ -1,0 +1,8 @@
+{
+  "name": "B2B Wholesaler Track",
+  "description": "Algerian wholesale real-time live stock and order tracking B2B portal using Convex and React.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
