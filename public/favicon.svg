@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  
+  <!-- Outer glowing accent border -->
+  <rect x="12" y="12" width="488" height="488" rx="116" stroke="url(#emeraldGrad)" stroke-width="8" stroke-opacity="0.6"/>
+
+  <!-- Atlas B2B Warehouse & Geometric "A" Motif -->
+  <!-- Top Isometric Face -->
+  <polygon points="256,96 384,170 256,244 128,170" fill="url(#cyanGrad)" opacity="0.95"/>
+  <polygon points="256,104 370,170 256,236 142,170" fill="#ffffff" opacity="0.15"/>
+
+  <!-- Left Isometric Face (Emerald) -->
+  <polygon points="128,170 256,244 256,396 128,322" fill="url(#emeraldGrad)"/>
+  <!-- Decorative groove/cutout -->
+  <polygon points="152,205 232,251 232,360 152,314" fill="#064e3b" opacity="0.6"/>
+
+  <!-- Right Isometric Face (Deep Emerald / Slate Teal) -->
+  <polygon points="256,244 384,170 384,322 256,396" fill="#047857"/>
+  <polygon points="280,251 360,205 360,314 280,360" fill="#065f46" opacity="0.7"/>
+
+  <!-- Central "A" Monogram / Golden Pillar -->
+  <g filter="url(#glow)">
+    <!-- Upward arrow / Apex of Atlas -->
+    <path d="M256 140 L310 236 L284 236 L270 210 L242 210 L228 236 L202 236 Z" fill="url(#amberGrad)"/>
+    <polygon points="256,176 264,196 248,196" fill="#090d16"/>
+  </g>
+
+  <!-- Logistics Level Indicator / Live Pulse Node -->
+  <circle cx="256" cy="420" r="14" fill="#10b981"/>
+  <circle cx="256" cy="420" r="22" stroke="#34d399" stroke-width="4" stroke-opacity="0.8"/>
+</svg>

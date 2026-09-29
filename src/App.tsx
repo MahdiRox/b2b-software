@@ -74,8 +74,8 @@ export default function App() {
       <header className="bg-white border-b border-slate-200 px-4 sm:px-8 py-3.5 flex items-center justify-between shadow-2xs sticky top-0 z-30">
         {/* Zone 1: Single text element wordmark */}
         <div className="flex items-center space-x-3">
-          <div className="bg-indigo-600 p-2 rounded-lg text-white shadow-2xs">
-            <Factory className="w-5 h-5" />
+          <div className="w-9 h-9 rounded-lg shadow-2xs overflow-hidden flex items-center justify-center bg-slate-900 border border-slate-700/50">
+            <img src="/favicon.svg" alt="Atlas Distribution" className="w-full h-full object-cover" />
           </div>
           <div>
             <span className="text-base font-bold tracking-tight text-slate-900 leading-tight block">
